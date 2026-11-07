@@ -10,17 +10,25 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
 
+# Ścieżka do logów zgodna z Twoim .env
+log_path = BASE_DIR / os.getenv("LOG_FILE", "logs/szpontmc_manager.log")
+log_path.parent.mkdir(parents=True, exist_ok=True)
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler(log_path, encoding="utf-8"),
+        logging.StreamHandler(sys.stdout),
+    ],
 )
 logger = logging.getLogger("Backup")
 
+# Ścieżki i limity w 100% zgodne z Twoim .env
 MC_DIR = Path(os.getenv("MC_DIR", "/home/ubuntu/mc-server")).resolve()
-BACKUP_DIR = Path(os.getenv("BACKUP_DIR", MC_DIR / "backups")).resolve()
-MAX_AUTO_BACKUPS = int(os.getenv("MAX_AUTO_BACKUPS", "5"))
+BACKUP_DIR = Path(os.getenv("TEMP_BACKUP_DIR", "/tmp/mc-backups")).resolve()
+MAX_BACKUPS = int(os.getenv("MAX_BACKUPS", "7"))
 
-# Katalogi i pliki bezwzględnie ignorowane przy pełnym backupie
 FULL_BACKUP_EXCLUDES = {
     "backups",
     ".git",
@@ -40,14 +48,9 @@ def tar_exclude_filter(tarinfo: tarfile.TarInfo) -> tarfile.TarInfo | None:
 
 
 def cleanup_old_backups(keep_count: int) -> None:
-    """
-    Usuwa najstarsze automatyczne kopie bezpieczeństwa.
-    Archiwa z oznaczeniem 'FULL' są trwale ignorowane i nigdy nie podlegają rotacji.
-    """
     if keep_count <= 0:
         return
 
-    # Pobieramy wyłącznie zwykłe kopie automatyczne (pomijamy backup_FULL_*)
     auto_backups = sorted(
         [
             f for f in BACKUP_DIR.glob("backup_*.tar.gz")
@@ -96,7 +99,7 @@ def create_backup(full: bool = False) -> Path:
             tar.add(world_dir, arcname="world")
 
         # Rotacja dotyczy tylko zwykłych kopii
-        cleanup_old_backups(MAX_AUTO_BACKUPS)
+        cleanup_old_backups(MAX_BACKUPS)
 
     file_size_mb = archive_path.stat().st_size / (1024 * 1024)
     logger.info("Zapisano: %s (%.2f MB)", archive_path.name, file_size_mb)
