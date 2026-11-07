@@ -53,7 +53,7 @@ def cleanup_old_backups(keep_count: int) -> None:
 
     auto_backups = sorted(
         [
-            f for f in BACKUP_DIR.glob("backup_*.tar.gz")
+            f for f in BACKUP_DIR.glob("backup_*.tar")
             if not f.name.startswith("backup_FULL_")
         ],
         key=lambda p: p.stat().st_mtime,
@@ -75,11 +75,11 @@ def create_backup(full: bool = False) -> Path:
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     if full:
-        archive_name = f"backup_FULL_{timestamp}.tar.gz"
+        archive_name = f"backup_FULL_{timestamp}.tar"
         archive_path = BACKUP_DIR / archive_name
         logger.info("Tworzenie PEŁNEGO backupu serwera (wszystkie pliki) -> %s", archive_name)
 
-        with tarfile.open(archive_path, "w:gz") as tar:
+        with tarfile.open(archive_path, "w") as tar:
             for item in MC_DIR.iterdir():
                 if item.name not in FULL_BACKUP_EXCLUDES:
                     logger.info("Pakowanie: %s", item.name)
@@ -87,7 +87,7 @@ def create_backup(full: bool = False) -> Path:
 
         logger.info("Pełny backup ukończony pomyślnie. Plik nie podlega rotacji retencji.")
     else:
-        archive_name = f"backup_auto_{timestamp}.tar.gz"
+        archive_name = f"backup_auto_{timestamp}.tar"
         archive_path = BACKUP_DIR / archive_name
         world_dir = MC_DIR / "world"
 
