@@ -1,0 +1,334 @@
+# Inicjalizacja bossbara
+/bossbar remove update_bar
+/bossbar add update_bar {"text":"! Restart serwera za 60s","color":"green","bold":true}
+/bossbar set update_bar players @a
+/bossbar set update_bar max 60
+/bossbar set update_bar style progress
+/bossbar set update_bar color green
+/bossbar set update_bar value 60
+/tellraw @a [{"text":"[SERWER] ","color":"dark_red","bold":true},{"text":"Restart i aktualizacja paczki za ","color":"gold"},{"text":"60 sekund","color":"green","bold":true},{"text":"!","color":"gold"}]
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 59
+/bossbar set update_bar name {"text":"! Restart za 59s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 58
+/bossbar set update_bar name {"text":"! Restart za 58s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 57
+/bossbar set update_bar name {"text":"! Restart za 57s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 56
+/bossbar set update_bar name {"text":"! Restart za 56s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 55
+/bossbar set update_bar name {"text":"! Restart za 55s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 54
+/bossbar set update_bar name {"text":"! Restart za 54s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 53
+/bossbar set update_bar name {"text":"! Restart za 53s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 52
+/bossbar set update_bar name {"text":"! Restart za 52s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 51
+/bossbar set update_bar name {"text":"! Restart za 51s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 50
+/bossbar set update_bar name {"text":"! Restart za 50s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 49
+/bossbar set update_bar name {"text":"! Restart za 49s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 48
+/bossbar set update_bar name {"text":"! Restart za 48s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 47
+/bossbar set update_bar name {"text":"! Restart za 47s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 46
+/bossbar set update_bar name {"text":"! Restart za 46s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 45
+/bossbar set update_bar name {"text":"! Restart za 45s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 44
+/bossbar set update_bar name {"text":"! Restart za 44s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 43
+/bossbar set update_bar name {"text":"! Restart za 43s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 42
+/bossbar set update_bar name {"text":"! Restart za 42s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 41
+/bossbar set update_bar name {"text":"! Restart za 41s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 40
+/bossbar set update_bar name {"text":"! Restart za 40s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 39
+/bossbar set update_bar name {"text":"! Restart za 39s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 38
+/bossbar set update_bar name {"text":"! Restart za 38s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 37
+/bossbar set update_bar name {"text":"! Restart za 37s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 36
+/bossbar set update_bar name {"text":"! Restart za 36s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 35
+/bossbar set update_bar name {"text":"! Restart za 35s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 34
+/bossbar set update_bar name {"text":"! Restart za 34s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 33
+/bossbar set update_bar name {"text":"! Restart za 33s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 32
+/bossbar set update_bar name {"text":"! Restart za 32s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color green
+/bossbar set update_bar value 31
+/bossbar set update_bar name {"text":"! Restart za 31s","color":"green","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 30
+/bossbar set update_bar name {"text":"! Restart za 30s","color":"yellow","bold":true}
+/tellraw @a [{"text":"[SERWER] ","color":"dark_red","bold":true},{"text":"Restart za ","color":"gold"},{"text":"30 sekund","color":"yellow","bold":true},{"text":"!","color":"gold"}]
+/playsound minecraft:block.note_block.bell master @a ~ ~ ~ 1 1.0
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 29
+/bossbar set update_bar name {"text":"! Restart za 29s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 28
+/bossbar set update_bar name {"text":"! Restart za 28s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 27
+/bossbar set update_bar name {"text":"! Restart za 27s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 26
+/bossbar set update_bar name {"text":"! Restart za 26s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 25
+/bossbar set update_bar name {"text":"! Restart za 25s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 24
+/bossbar set update_bar name {"text":"! Restart za 24s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 23
+/bossbar set update_bar name {"text":"! Restart za 23s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 22
+/bossbar set update_bar name {"text":"! Restart za 22s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 21
+/bossbar set update_bar name {"text":"! Restart za 21s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 20
+/bossbar set update_bar name {"text":"! Restart za 20s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 19
+/bossbar set update_bar name {"text":"! Restart za 19s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 18
+/bossbar set update_bar name {"text":"! Restart za 18s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 17
+/bossbar set update_bar name {"text":"! Restart za 17s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color yellow
+/bossbar set update_bar value 16
+/bossbar set update_bar name {"text":"! Restart za 16s","color":"yellow","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 15
+/bossbar set update_bar name {"text":"! Restart za 15s","color":"red","bold":true}
+/tellraw @a [{"text":"[SERWER] ","color":"dark_red","bold":true},{"text":"Restart za ","color":"gold"},{"text":"15 sekund","color":"red","bold":true},{"text":"! Przygotujcie sie na rozlaczenie.","color":"gold"}]
+/playsound minecraft:block.note_block.bell master @a ~ ~ ~ 1 1.2
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 14
+/bossbar set update_bar name {"text":"! Restart za 14s","color":"red","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 13
+/bossbar set update_bar name {"text":"! Restart za 13s","color":"red","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 12
+/bossbar set update_bar name {"text":"! Restart za 12s","color":"red","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 11
+/bossbar set update_bar name {"text":"! Restart za 11s","color":"red","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 10
+/bossbar set update_bar name {"text":"! Restart za 10s","color":"red","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 9
+/bossbar set update_bar name {"text":"! Restart za 9s","color":"red","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 8
+/bossbar set update_bar name {"text":"! Restart za 8s","color":"red","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 7
+/bossbar set update_bar name {"text":"! Restart za 7s","color":"red","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 6
+/bossbar set update_bar name {"text":"! Restart za 6s","color":"red","bold":true}
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 5
+/bossbar set update_bar name {"text":"! Restart za 5s","color":"red","bold":true}
+/tellraw @a [{"text":"[SERWER] ","color":"dark_red","bold":true},{"text":"5...","color":"red","bold":true}]
+/title @a times 0 22 4
+/title @a title {"text":"5","color":"red","bold":true}
+/playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1.0
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 4
+/bossbar set update_bar name {"text":"! Restart za 4s","color":"red","bold":true}
+/tellraw @a [{"text":"[SERWER] ","color":"dark_red","bold":true},{"text":"4...","color":"red","bold":true}]
+/title @a times 0 22 4
+/title @a title {"text":"4","color":"red","bold":true}
+/playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1.15
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 3
+/bossbar set update_bar name {"text":"! Restart za 3s","color":"red","bold":true}
+/tellraw @a [{"text":"[SERWER] ","color":"dark_red","bold":true},{"text":"3...","color":"red","bold":true}]
+/title @a times 0 22 4
+/title @a title {"text":"3","color":"red","bold":true}
+/playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1.3
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 2
+/bossbar set update_bar name {"text":"! Restart za 2s","color":"red","bold":true}
+/tellraw @a [{"text":"[SERWER] ","color":"dark_red","bold":true},{"text":"2...","color":"red","bold":true}]
+/title @a times 0 22 4
+/title @a title {"text":"2","color":"red","bold":true}
+/playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1.45
+wait(1000)
+
+/bossbar set update_bar color red
+/bossbar set update_bar value 1
+/bossbar set update_bar name {"text":"! Restart za 1s","color":"red","bold":true}
+/tellraw @a [{"text":"[SERWER] ","color":"dark_red","bold":true},{"text":"1...","color":"red","bold":true}]
+/title @a times 0 22 4
+/title @a title {"text":"1","color":"red","bold":true}
+/playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1.6
+wait(1000)
+
+# Czyszczenie i finalizacja
+/bossbar remove update_bar
+/tellraw @a [{"text":"[SERWER] ","color":"dark_red","bold":true},{"text":"Wylaczanie serwera i tworzenie kopii zapasowej...","color":"gray"}]
+wait(500)

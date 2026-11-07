@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.tar.gz
+*.zip
+.env
+credentials.json
+token.json
+service_account.json
