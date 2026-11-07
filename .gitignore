@@ -7,3 +7,10 @@ __pycache__/
 credentials.json
 token.json
 service_account.json
+logs/
+*.log
+deploy_api.log
+.env
+token.json
+credentials.json
+client_secret*.json
